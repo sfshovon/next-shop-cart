@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const SearchedItems = () => {
@@ -30,11 +29,8 @@ const SearchedItems = () => {
         ))
       }
       </div>
-      <div className="mt-6 " style={{ backgroundImage: "url('../../public/Search Banner.png')", backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover' }}>
-        <div className="flex flex-col justify-center items-center">
-          <Image src="/offer.png" height={225} width={750} alt="Banner"/>
-          <h5>{`Check it out > > >`}</h5>
-        </div>s
+      <div className="mt-6 bg-cover bg-no-repeat bg-center bg-[url('../../public/search-banner.png')] h-[800px] flex justify-center items-center">
+        <img src="/offer.png" alt="Banner"/>
       </div>
     </div>
   );
