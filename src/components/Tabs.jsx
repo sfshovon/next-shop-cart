@@ -1,5 +1,4 @@
 import { TabList } from '@/utils/tabList'
-import React from 'react'
 
 const Tabs = () => {
   return (
