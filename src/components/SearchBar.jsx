@@ -36,7 +36,7 @@ const SearchBar = ({ setSearchedItems }) => {
   }, [searchText]);
 
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center border-t border-zinc-600 pt-2">
       <div className="bg-orange-300 rounded-xl p-3 flex justify-center items-center">
         <GrLocation size={24} />
         <span className="pl-2 font-semibold">Dhaka, 1212</span>

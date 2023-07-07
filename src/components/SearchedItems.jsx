@@ -11,7 +11,6 @@ const SearchedItems = () => {
         return response.json()
       })
       .then(data => {
-        console.log("to", data?.products[0]?.productData);
         setSearchData(data?.products[0]?.productData);
       })
     }
