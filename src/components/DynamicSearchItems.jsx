@@ -1,4 +1,3 @@
-import React from "react";
 import SingleDeal from "./SingleDeal";
 
 const DynamicSearchItems = ({ searchedItems }) => {
@@ -9,8 +8,8 @@ const DynamicSearchItems = ({ searchedItems }) => {
         <>
           <h4 className="font-bold">{`Searched Items`}</h4>
           <div className="grid grid-cols-5 border-t-2 border-orange-300 border-dashed mt-4 gap-x-10 gap-y-4">
-            {searchedItems?.map((hotDeal) => (
-              <SingleDeal hotDeal={hotDeal}></SingleDeal>
+            {searchedItems?.map((dynamicSearchItem) => (
+              <SingleDeal deal={dynamicSearchItem}></SingleDeal>
             ))}
           </div>
         </>
